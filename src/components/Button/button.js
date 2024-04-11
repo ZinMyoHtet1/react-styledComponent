@@ -1,4 +1,4 @@
-import StyledButton, { FanyButton } from "./button.styles";
+import StyledButton, { FanyButton, AnimatedImg } from "./button.styles";
 
 export default StyledButton;
-export { FanyButton };
+export { FanyButton, AnimatedImg };

@@ -1,7 +1,11 @@
 import "./App.css";
-import StyledButton, { FanyButton } from "./components/Button/button";
+import StyledButton, {
+  FanyButton,
+  AnimatedImg,
+} from "./components/Button/button";
 import { ThemeButton } from "./components/Button/button.styles";
 import { createGlobalStyle } from "styled-components";
+import logo from "./logo512.png";
 
 const GlobalStyle = createGlobalStyle`
   button{
@@ -29,6 +33,10 @@ function App() {
         <br />
       </div>
       <ThemeButton>Dark Button</ThemeButton>
+      <div>
+        <br />
+      </div>
+      <AnimatedImg src={logo} />
     </div>
   );
 }

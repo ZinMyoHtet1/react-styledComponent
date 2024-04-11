@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const StyledButton = styled.button`
   padding: 12px 20px;
@@ -37,6 +37,22 @@ export const ThemeButton = styled(StyledButton)`
     background-color: ${(props) => props.theme.dark.primary};
     opacity: 0.8;
   }
+`;
+
+const rotate = keyframes`
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(180deg)
+  }
+`;
+
+export const AnimatedImg = styled.img`
+  display: inline-block;
+  height: 40vmin;
+  pointer-events: none;
+  animation: ${rotate} 4s linear infinite;
 `;
 
 export default StyledButton;
